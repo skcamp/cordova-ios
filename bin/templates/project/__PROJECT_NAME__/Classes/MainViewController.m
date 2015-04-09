@@ -87,7 +87,8 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return [super shouldAutorotateToInterfaceOrientation:interfaceOrientation];
+    // return [super shouldAutorotateToInterfaceOrientation:interfaceOrientation];
+    return YES; // Fix for WKWebView. I think Javascript is not running yet. --Winston
 }
 
 /* Comment out the block below to over-ride */
